@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<!--stuff in the head element won't appear on the page, you can add metadata here.-->    
+    <head>
+    <title>This is a title in its element</title>
+    </head>
+<style>   
+/* style the ul block for link items, remove bullets margins and padding */
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 2px 2px;
+        width: 200px;
+        background-color: #f1f1f1;
+        border: 1px solid #555;
+        }
+/* centres the text and puts a fine border around each item */
+        li {
+        display: inline;
+        text-align: center;
+        border-bottom: 1px solid #555;
+        }   
+     
+/* set up menu item styles */
+        li a {
+        display: block;
+        color: #000000;
+        background-color: #726f43;
+        text-decoration: none;
+        }
+/* change the link colour on hover*/
+
+        li a:hover {
+        background-color: #555;
+        color: white;
+        }
+ /* show that this is the active page by changing the colour.. add class active to the list item below */       
+       li a.active {
+                background-color: #4CAF50;
+                color: white;
+        } 
+ /* change the colour and font style of h1 */
+        h1 {
+                color: red;
+                background-color: black;
+                font-style: oblique;
+        }
+        
+</style>
+
+    <body>
+ <!--Here is the list of links to appear on the navigation bar-->
+        <ul>
+                <li><a class="active" href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+                <li><a href="contact.asp">Contact</a></li>
+                <li><a href="about.asp">About</a></li>
+        </ul>
+ <!--Header block with different semantic h-->          
+        <header>
+                <h1>Hello World</h1>
+                <h3> and hello sub header too</h3>
+        </header>
+ <!--a div element called content ready to be styled and moved around-->
+        <div class="content">
+                <p>Here is the first line of content in between paragraph markers.  Therre could be several lines of this.
+                </p>
+                <p>Here is another paragraph of text I am also testing the keyboard while I write this.  Can I really touch type?</p>
+        </div>
+ <!--another div element this time called content2, also ready to be styled and moved around-->
+        <div class="content2">
+                    <p>Here's the next element, the text here is assigned to class content2 the idea being to use the float property on this.</p>
+                    <p>It is probably useful to have a couple of paragraphs handy in each of these two elements.  At present we have absolutely no styling around here and the paragraphs just come up as single lines of text, not being long enough to wrap as things stand.</p>
+        </div>
+ <!--a larger amount of text in this div to make page longer--> 
+        <div class="content3">
+                <p>I like the idea of providing regional government.  This usually gets dismissed as being "another layer of government that has to be paid for", and debate gets no further than that.  Yet if we want good government which people can relate to, it needs to be paid for, be consistent across the country, and be near enough to the people being governed.
+                        At present we have unelected bodies which are supposed to look after regional interests in Westminster and Brussels.  In the North West where I live, that's the North West Development Agency, and there's another, newer body called 4NW which is referred to as the "Regional Leader Board". 
+                        Although some elected individuals (for example from local councils) get appointed to sit on these bodies, the electorate has no say over who they are and how they are appointed. There are also a load of unelected members who come from business. 
+                        These agencies cost money to run.  I think they should be abolished and the money saved put towards providing elected regional assemblies. 
+                        <p>Doing so would provide the opportunity for many more citizens to get involved in the democratic process.  It would solve the problem at Westminster of Scots MPs voting in Parliament on purely English issues.  These issues would instead be decided in accordance with a region's priorities - in the way Wales, Scotland and Northern Ireland deal with things right now.  This beats the idea of having an English parliament - the needs and interests of the North of England are very different from those of Devon and Cornwall. </p>
+                        Of course, the Tories say they will do away with regional agencies altogether - to save money.  This would leave the regions with no voice in Westminster, but perhaps most importantly, in Europe.   Given that, for example, Merseyside had massive investments from Europe which our own central government would never have provided, it's essential that we continue to be heard in both.
+                        <p>My ideal model would be a Westminster parliament for the whole UK dealing with foreign affairs, defence, intelligence and the like.  Transport, education, health and such like would be devolved to the regions.   The savings in a reduced Westminster and from the regional agencies would off set some of the cost.   </p>
+                        Local government should be more local too.  Things haven't really been right since many councils were amalgamated in the mid seventies.  There are towns with thousands of people with no truly local council to look after things that should be decided locally.  Cleansing and rubbish collection, parks and gardens, street signage etc., are now often dealt with by some "unitary" body quite remote from the people being governed.
+                        </p>
+        </div>
+ <!--the footer shouldn't contain too much, it is a semantic element so needs to remain just a footer.
+                Good excuse to show use of special characters (copyright symbol)-->
+
+        <footer>This is no more than a test.  &#169; 2020
+        </footer>
+    </body>
+
+    </html>
